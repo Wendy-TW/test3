@@ -2,6 +2,9 @@ name: Run my python
 
 on: 
   push: # do this every push
+  schedule:
+  - cron: '30 2 * * *'  # Runs at 8 am Asia/Asia Central time
+  
 jobs:
   build:
     name: Set up environment
@@ -11,8 +14,8 @@ jobs:
     
     - name: Run my python
       run: |
-        python3 test.py
-
+        python3 Test_stockPrice_v3_20240323.py
+        python3 Email_CSV_20240323.py
 
 
   
