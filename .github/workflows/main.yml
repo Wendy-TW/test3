@@ -2,7 +2,7 @@ name : Run my python
 on : 
   push: # do this every time
 
-job: 
+jobs: 
   build:
   name: set up environment
   run-on:  ubuntu-lastest
