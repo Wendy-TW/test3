@@ -1,5 +1,8 @@
 import requests
 import pandas as pd
+import datetime
+today = datetime.date.today()
+today_str=str(today)
 
 # Function to get top 500 US stocks from Wikipedia
 def get_top_500_stocks():
@@ -42,11 +45,11 @@ def main(start_date, end_date):
             print(f"Failed to download data for {ticker}: {str(e)}")
     
     # Save data to CSV
-    df_final.to_csv('top_500_us_stocks_2024.csv', index=False)
+    df_final.to_csv('top_500_us_stocks_now.csv', index=False)
 
 if __name__ == "__main__":
     #start_date = input("Enter the start date (YYYY-MM-DD): ")
     #end_date = input("Enter the end date (YYYY-MM-DD): ")
     start_date="2023-01-01"
-    end_date="2024-12-31"
+    end_date=str(today)
     main(start_date, end_date)
