@@ -4,13 +4,13 @@ on :
 
 jobs: 
   build:
-  name: set up environment
-  run-on:  ubuntu-lastest
-  steps:
-    - uses:  action/checkout@test3
-    - name:  Run my python
-      run:
-        python3 test.py
+    name: set up environment
+    run-on:  ubuntu-lastest
+    steps:
+      - uses:  action/checkout@test3
+      - name:  Run my python
+        run:
+          python3 test.py
 
 
 
