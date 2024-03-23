@@ -1,0 +1,19 @@
+"""
+
+GitHub Action how to set a job 
+name: Scheduled Job
+
+on:
+  schedule:
+    - cron: '30 2 * * *'  # Runs at 8 am Asia/Asia Central time
+
+jobs:
+  run-at-8-am:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Add your job steps here
+
+"""

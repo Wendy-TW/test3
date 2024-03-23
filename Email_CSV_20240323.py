@@ -39,6 +39,9 @@ subject = 'Email with CSV Attachment'
 body = 'Please find attached the CSV file.'
 attachment_path = 'top_500_us_stocks_now.csv'  # Path to the CSV file
 
-send_email_with_attachment(sender_email, sender_password, receiver_email, subject, body, attachment_path)
 
-print("complete")
+receiver_list=["rhemachou@hotmail.com" , "wendy.y.t.chou@noexternalmail.hsbc.com"]
+
+for i in receiver_list:
+    send_email_with_attachment(sender_email, sender_password, i, subject, body, attachment_path)
+    print("complete")
