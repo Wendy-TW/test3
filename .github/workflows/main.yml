@@ -7,7 +7,7 @@ jobs:
     name: set up environment
     runs-on:  ubuntu-lastest
     steps:
-      - uses:  action/checkout@test3
+      - uses:  action/checkout@v2
       - name:  Run my python
         run:
           python3 test.py
