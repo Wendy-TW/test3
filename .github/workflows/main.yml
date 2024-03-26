@@ -15,7 +15,7 @@ jobs:
     - name: Run my python
       run: |
         python3 Test_stockPrice_v3_20240323.py
-        python3 Email_CSV_20240323.py
+        python3 email_20240323.py
 
 
   
